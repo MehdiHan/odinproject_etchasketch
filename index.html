@@ -15,10 +15,22 @@
       <h1>Etch a sketch</h1>
     </header>
     <main>
-      <h2>Pick a color and draw something cool !!</h2>
+      <h2>Set a grid, pick a color and draw something</h2>
       <div class="controller">
-        <button id="reset">Clear</button>
-        <input type="color" id="colorPicker" value="#FF0000" />
+        <input
+          type="number"
+          id="squareNumbers"
+          placheholder="0"
+          class="square__numbers"
+        />
+        <button id="squareSetup" class="square__setup">Set my grid</button>
+        <button id="squareColorReset" class="square__reset">Clear</button>
+        <input
+          type="color"
+          class="square__picker"
+          id="squareColorPicker"
+          value="#ff3c38"
+        />
       </div>
       <div id="app" class="container"></div>
     </main>

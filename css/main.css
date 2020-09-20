@@ -22,9 +22,14 @@ main {
 
   min-height: 90vh;
 }
+main h2 {
+  font-size: 1.25rem;
+}
 div.controller {
+  width: 500px;
   display: flex;
-  padding: 25px;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 div.controller button {
   color: white;
@@ -34,13 +39,17 @@ div.controller button {
   margin-right: 40px;
   padding: 10px 20px;
 }
-div.controller input {
+input.square__numbers {
+  width: 100px;
+  margin-right: 5px;
+}
+input.square__picker {
   border: none;
   width: 75px;
   height: 35px;
 }
 div.container {
-  background-color: red;
+  background-color: #ff3c38;
   width: 500px;
   height: 500px;
   display: flex;
@@ -49,7 +58,5 @@ div.container {
 
 div.square {
   border: 1px solid #2d3047;
-  height: 50px;
-  width: 50px;
   background-color: white;
 }
